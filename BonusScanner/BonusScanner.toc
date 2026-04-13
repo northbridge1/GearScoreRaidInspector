@@ -1,0 +1,9 @@
+﻿## Interface: 30300
+## Title: BonusScanner
+## Version: 5.3
+## Notes: Scans your Equipment for cumulative item bonuses and sums them up. Updated by Northbridge
+## Author: Northbridge
+## SavedVariables: BonusScannerConfig
+## OptionalDeps: Ace3, LibTipHooker-1.1
+## Dependencies: 
+BonusScanner.xml

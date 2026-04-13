@@ -1,2 +1,1 @@
-# GearScoreRaidInspector
-Gear Score Raid Inspector
+Copy the folders into the folder World of Warcraft\Interface\AddOns
