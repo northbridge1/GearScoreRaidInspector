@@ -263,7 +263,7 @@ inspectStatusText:SetTextColor(0.76, 0.76, 0.80)
 
 -- Header
 local header = CreateFrame("Frame", nil, frame)
-header:SetSize(INNER_W, 18)
+header:SetSize(INNER_W + 5, 18)
 header:SetPoint("TOPLEFT", inspectStatusText, "BOTTOMLEFT", 0, -12)
 if header.SetBackdrop then
     ApplyThemeBackdrop(header, THEME_HEADER_BG, THEME_HEADER_BORDER, 10, 2)
@@ -316,7 +316,7 @@ local function CreateRow(index)
 
     row.bg = row:CreateTexture(nil, "BACKGROUND")
     row.bg:SetPoint("TOPLEFT", row, "TOPLEFT", 0, 0)
-    row.bg:SetPoint("BOTTOMRIGHT", row, "BOTTOMRIGHT", 0, 0)
+    row.bg:SetPoint("BOTTOMRIGHT", row, "BOTTOMRIGHT", -10, 0)
     if (index % 2) == 0 then
         row.bg:SetTexture(THEME_ROW_BG_B[1], THEME_ROW_BG_B[2], THEME_ROW_BG_B[3], THEME_ROW_BG_B[4])
     else
@@ -327,7 +327,7 @@ local function CreateRow(index)
     row.topLine:SetTexture(THEME_ROW_BORDER[1], THEME_ROW_BORDER[2], THEME_ROW_BORDER[3], 0.45)
     row.topLine:SetHeight(1)
     row.topLine:SetPoint("TOPLEFT", row, "TOPLEFT", 2, 0)
-    row.topLine:SetPoint("TOPRIGHT", row, "TOPRIGHT", -2, 0)
+    row.topLine:SetPoint("TOPRIGHT", row, "TOPRIGHT", -12, 0)
 
     row.name = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     row.name:SetPoint("LEFT", row, "LEFT", COL_X_NAME, 0)
